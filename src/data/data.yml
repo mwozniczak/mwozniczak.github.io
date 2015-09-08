@@ -1,0 +1,259 @@
+education:
+  school: SWPS (now University of Social Sciences and Humanities)
+  major: Social Psychology of Information Technology and Communication (Społeczna Psychologia Informatyki i Komunikacji)
+
+skills:
+  languages:
+    - name: Polish
+      level: Native speaker.
+    - name: English
+      level: 'Proficient, near-native fluency.'
+    - name: French
+      level: 'B2-level, written used on a regular basis.'
+    - name: German
+      level: B1+-level.
+  code:
+    title: Programming
+    items:
+      - {name: Python, level: expert}
+      - {name: Javascript, level: expert}
+      - {name: PHP, level: expert}
+      - {name: Java, level: intermediate}
+      - {name: 'C#', level: intermediate}
+      - {name: Erlang, level: basics}
+
+  versioning:
+    title: Version control software
+    items:
+      - {name: Git, level: expert}
+      - {name: GitLab, level: expert}
+      - {name: SVN, level: expert}
+      - {name: Gerrit, level: expert}
+      - {name: Jenkins, level: intermediate}
+
+  web_frameworks:
+    title: Web frameworks
+    items:
+      - {name: Django, level: expert}
+      - {name: Tastypie, level: expert}
+      - {name: jQuery, level: expert}
+      - {name: Angular, level: intermediate}
+      - {name: node.js, level: intermediate}
+      - {name: Symfony, level: intermediate}
+
+  templating:
+    title: Templating and configuration
+    items:
+      - {name: HTML, level: expert}
+      - {name: XML, level: expert}
+      - {name: CSS, level: expert}
+      - {name: JSON, level: expert}
+      - {name: Markdown, level: expert}
+      - {name: YAML, level: expert}
+      - {name: Bootstrap, level: expert}
+      - {name: Skeleton, level: expert}
+      - {name: Jade, level: intermediate}
+      - {name: Stylus, level: intermediate}
+
+  data:
+    title: 'Data & Data Analysis'
+    items:
+     - {name: 'MySQL', level: 'expert'}
+     - {name: 'SQLite', level: 'expert'}
+     - {name: 'MongoDB', level: 'intermediate'}
+     - {name: 'Oracle', level: 'intermediate'}
+     - {name: 'SPSS', level: 'intermediate'}
+     - {name: 'Riak', level: 'basics'}
+
+  visual:
+    title: 'Visual media'
+    emphasise: 1
+    items:
+      - {name: 'Photoshop', level: 'expert'}
+      - {name: 'Illustrator', level: 'intermediate'}
+      - {name: 'InDesign', level: 'intermediate'}
+      - {name: 'Digital photography', level: 'intermediate'}
+      - {name: '3ds max', level: 'intermediate'}
+      - {name: 'Gimp', level: 'basics'}
+
+history:
+  2011-current:
+  # 2015:
+    - employer: Atos IT Services Sp z o.o.
+      title: Software Engineer
+      responsibilities:
+        - 'Co-developed web frontend for Dyamon, flagship Atos monitoring tool and a part of ATF (Atos Technology Framework). Reworked and refactored the vast majority of code to improve code readability, as well as to enhance the functionality and configurability. The end result is now supported by a robust, extendable authentication framework and routing system, configurability via YAML, and clearly defined OOP class system.'
+        - 'Developed a bridge between Dyamon->MDR (Master Data Record), as well as a configurable system for exporting to other CMDB systems such as Atrium or HPAM. The export system itself is extensible with custom processing functions, of which many exist to support the creation of CIs, relations, and Product Software categories, among others.'
+        - 'Re-worked the user interface for internal Canopy Pricing Tool, in accordance to standards and best industry practices for usability and user experience design.'
+  # 2011-2015:
+  #   - employer: Atos IT Services Sp z o.o.
+  #     title: Application Engineer
+  #     responsibilities:
+        - 'Co-lead presentations of ATS Tower during Atos Open Days. Said presentation was met with standing ovation, setting the bar for all others to follow.'
+        - 'Two-time recipient of the Accolade Award'
+        - 'Designed and developed Tapedeck Remote Automation and Deployment Tool, and lead the enhancement projects related to it. Said tool is capable of rapid, configurable automation (e.g. mass instalations, remediation, compliance checks, etc.) across multiple target machines, both Windows (WMI required), and Linux/Unix (via SSH)'
+        - 'Developed a robust, customized toolset for Cisco network hardware (routers, switches, etc.) auditing and compliance checking, visualization, and remediation.'
+        - 'Developed Dyamon Reporting, a visual dashboard of diagrams showing the customers overall health of standard operations, such as backups or scheduled jobs. The end-users are empowered to easily track down which machines are underperforming, and why. During its operation, Dyamon Reporting was also able to generate PDF files which could be sent to contact people responsible for machines identified as adversely affected by performance issues.'
+  # 2011:
+  #   - employer: Atos Origin Sp z o.o.
+  #     title: Application Engineer
+  #     responsibilities:
+        - 'Became the first Polish engineer to be extensively trained in the usage and inner workings of Dyamon (known as R3D3 at the time).'
+        - 'Responsible for delivery, installation, and troubleshooting of Dyamon agents. These tasks required extensive communication, collaboration across several different branches, and problem solving skills.'
+        - 'Commenced work on automation tool RDAT, that would in time become Tapedeck Remote Automation and Deployment Tool. Initially its task was to aid in rapid deployment of Dyamon agents across multiple machines. In time however, its scope broadened on track towards more generalized automation.'
+  2011:
+    - employer: BeeLaud Sp. z o.o.
+      title: Programmer
+      responsibilities:
+        - 'Co-development of a B2B Enterprise platform for GSM MVNO (Mobile Virtual Network Operator) services delivery and reselling.'
+        - 'Development and layout design implementation for the web frontend.'
+        - 'User account privilege management for base users, resellers, representatives and administrators.'
+  2010:
+    - employer: Asseco Systems S.A.
+      title: 'Contractor; Writer, Prototype Developer'
+      responsibilities:
+        - 'Participation in development of IT services-related content. Design and implementation of a fully-featured mock-up page for presentation of said content as well as of proposed graphical layout.'
+    - employer: Master’s Thesis
+      title: Researcher
+      responsibilities:
+        - 'Development and implementation of conversational Artificial Intelligence (AI chatbot) trained using social interaction, and social media.'
+        - 'Preparation and execution of an Internet-based social experiment.'
+        - 'Data gathering and statistical analysis.'
+        - 'Reporting and presentation of results.'
+
+    - employer: 'UseLab / Technology Partners'
+      title: Developer
+      responsibilities:
+        - 'Implementation of CMS and visual layout for technologypartners.pl site.'
+        - 'Template preparation and adjustments.'
+  2009:
+    - employer: 'Webprovider.pl'
+      title: Programmer
+      responsibilities:
+        - 'Enhancement of existing CMS platform (based on TypoLight).'
+        - 'Code refactoring.'
+        - 'Development of a proximity and geolocation plugin, based on postal code.'
+    - employer: UseLab
+      title: Internship
+      responsibilities:
+        - Programming and tooling development.
+        - 'Aid in database migration (stored procedures, MySQL->Postgres)'
+        - 'Exposure to eyetracker research and methodologies.'
+        - 'Preparation and assistance in execution of user experience experiments.'
+        - 'Aid in overall usability testing.'
+        - 'Aid in data analysis and report creation.'
+        - 'Development of additional diagramming.'
+    - employer: Przemysław Durczak
+      title: 'Developer, designer.'
+      responsibilities:
+        - Website and portfolio design and implementation.
+        - Conceived and implemented tooling and workflow for updating the portfolio without the need for administrative back-end.
+  2008:
+    - employer: Cegedim Strategic Data
+      title: Remote surveying
+      responsibilities:
+        - Exposure to Avaya software suite.
+        - Conceived and implemented self-efficiency analysis and data gathering.
+  2007:
+    - employer: Various
+      title: "Programmer, Designer, Lead Developer"
+      responsibilities:
+        - Development of survey systems and remote tests for Internet-based social psychology experiments.
+    - employer: Lemon IT s.c.
+      title: PHP programmer
+      responsibilities:
+        - 'Implementation of a social dating platform: user management, messaging capability, gallery management and uploads.'
+        - 'Database administration and enhancements.'
+    - employer: Agora S.A.
+      title: 'Contractor, Developer'
+      responsibilities:
+        - 'Survey application development.'
+  2005:
+    - employer: ''
+      title: Developer
+      responsibilities:
+        - 'Design and preliminary implementation of an e-commerce platform for ordering paintings.'
+        - 'Facility for selectable sizes and frame types, with the price automatically adjusted accordingly.'
+        - 'Client administration, order management etc.'
+  2002:
+    - employer: Ipson Sp. z o.o.
+      title: Developer
+      responsibilities:
+        - 'Website, order form, database back-end for price lists.'
+
+testimonials:
+  - author: Arkadiusz Pawełek
+    author_title: Junior Project Manager
+    soundbite: 'Kreatywność, zaangażowanie i umiejętność pracy zespołowej'
+    content: >
+              Chciałem podziękować za wkład w projekt. Okazane przez ciebie kreatywność, zaangażowanie i umiejętność pracy zespołowej sprawiają, że w przyszłości chętnie wrócę do współpracy :)
+
+  - author: Dorota Smolińska-Bartosz
+    author_title: 'Canopy Product Marketing, Solution & Demand Management Team'
+    soundbite: I would like to thank Michal for the great support. It is a pleasure to work together.
+    content: >
+              I would like to thank Michal for the great support. In work they are very independent taking very different roles: Architect, Designer, Analytic, Tester.
+
+              They almost not need me at all ;) And that’s the most valuable – because I am trying to do it as a best effort addition to may daily tasks.
+
+              I am really grateful – it is a pleasure to work together.
+
+  - author: Paul Lavelle
+    author_title: Senior Network Engineer
+    soundbite: The standard of work has been excellent and you have always delivered on time.
+    content: >
+              Just a quick email to say thanks for the scripting work so far. The standard of work has been excellent and you have always delivered on time.
+            
+              The script you have developed will make a big difference to the UK Shared Services Improvement Programme.
+            
+              Look forward to working with you on other projects soon!
+
+  - author: Ben Rivens
+    author_title: NSCS Network Engineer
+    soundbite: Works brilliantly.
+    content: >
+              I just want to say thanks very much for the assistance with the HIS Auditing script and for turning it around so quickly.
+
+              It might need a tweak in the future as we may want to add more features to it, but it works brilliantly for what we need right now. Saved us a lot of time :)
+
+  - author: Marta Klicka
+    author_title: HR Operations Manager
+    soundbite: 'Efekt końcowy bardzo spodobał się także mojej szefowej, która jest zachwycona tym co udało się osiągnąć.'
+    content: >
+              Chciałabym bardzo podziękować za profesjonalne wsparcie, które zapewnił mi Michał Woźniczak.
+
+              Efekt końcowy bardzo spodobał się także mojej szefowej, która jest zachwycona tym co udało się osiągnąć.
+
+              Ponadto Michał w czasie okresu współpracy podpowiadał mi również różnego rodzaju rozwiązania, które z perspektywy laika wydawały się niemożliwe
+
+              Jeszcze raz DZIĘKUJĘ
+
+  - author: Ananth Rachakonda
+    author_title: Network Engineer
+    soundbite: 'Without your scripts it would not be possible to generate audits with 100% perfection, thank you for excellent work.'
+    content: >
+              Thank you very much for the scripts, they helped us a lot and we saved a few good weeks of man hours, moreover they can be re-used for future audits :)
+              
+              Without your scripts it would not be possible to generate audits with 100% perfection, thank you for excellent work.
+
+              Understanding the requirement was challenging and you are spot-on providing the right scripts. ay be you don't know how they reduced our workload, a few of my colleagues who borrowed them are already delighted by the work.
+
+              You deserve a big thanks as the scripts helped us to reach our deadlines. Looking forward to work with you.
+
+  - author: Martin Foote
+    author_title: 'Technical Strategy & Compliance. Networks, Security & Communication Services'
+    soundbite: Exceeded my expectations in terms of both quality and delivery.
+    content: >
+              Michal has been providing scripts for the UK Network Shared Services Improvement Program. The scripts generated have helped us immensely in helping to reduce the amount of manual audit and mapping from one configuration to another. 
+
+              These have been completed quickly and professionally and have exceeded my expectation in terms of both quality and delivery.
+
+              Michal is very helpful and works well with the guys in the UK to develop a good understanding of what's required up front, then quick to turn around the initial scripts and amendments. This has enabled us to reduce the time and effort it's taking us to deliver certain elements of the project.
+
+  - author: Klaus Halbig
+    author_title: 'Global Service Architect Server & Application Tooling GDTS'
+    soundbite: Very good improvement compared to what was available before you stepped in.
+    content: > 
+              Your structured approach was appreciated very much by the UMF architecture and developer team. By now we see a very good improvement compared to what was available before you stepped in.
+
+              I liked your presentations of the progress and giving that topic the right priority within your tasks all over.

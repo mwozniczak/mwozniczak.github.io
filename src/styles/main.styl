@@ -1,0 +1,116 @@
+html, body
+	height 100%
+	font-family 'Exo 2'
+	
+h1
+	font-weight 900
+	margin-bottom 0
+
+h2
+	font-weight 600
+	
+h3
+	font-weight 400
+
+h4
+	font-weight 400
+	
+// based on: https://css-tricks.com/perfect-full-page-background-image/
+cover(imgaddr)
+	background: url(imgaddr) no-repeat center center fixed
+	-webkit-background-size cover
+	-moz-background-size cover
+ 	-o-background-size cover
+	background-size cover
+	// filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')
+	// -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"
+		
+inner_shadow(args)
+	-moz-box-shadow: inset args
+	-webkit-box-shadow: inset args
+	box-shadow: inset args
+
+#topHeader
+	background #009999
+	color white
+	cover('../imgs/bg.JPG')
+	inner_shadow(0 0 500px black)
+
+#name
+	text-align center
+	padding-top 5em
+	padding-bottom 5em
+
+.workExp
+	padding 1em
+	margin-bottom 1em
+
+.workExp:hover
+	background #efe
+	
+.workExp .employer
+	margin-bottom 1em
+	margin-left -1em
+	
+// #testimonialBox
+@media only screen and (min-width: 550px) 
+	#topContent
+		width 100%
+		bottom 0
+	
+	.workExp .employer
+		border-right 1px solid #bab
+		margin-left 0
+
+@media only screen and (min-height: 600px)
+	#topContent
+		position absolute
+	#topHeader
+		min-height: 100%
+
+.testimonialSet
+	margin-bottom 2em
+	color white
+	text-align center
+	
+.testimonialContent
+	font-style italic
+	font-weight 600
+	margin-bottom 1em
+	
+	// t_border = 1px solid white
+
+	// border-left t_border
+	// border-right t_border
+	// padding 0 1em
+		
+.testimonialCaption
+	text-align right
+
+.wideHeader
+	background #C41100
+	color white
+	text-align center
+	margin-bottom 1em
+	padding-top 1em
+	
+#footer
+	margin-top 1em
+	margin-bottom 0
+	text-align center
+	padding-bottom 1em
+	background #063A77
+	
+li.knownTech
+	display inline
+	font-weight bold
+	font-variant small-caps
+
+.knownTech.expert
+	color #522
+	
+.knownTech.intermediate
+	color #552
+	
+.knownTech.basics
+	color #777
