@@ -4,7 +4,7 @@
 
 This is the tool I ~~overengineered~~ wrote for my CV. It's written as a gulpfile.js and, in a nutshell, what it does is:
 
- - Grab the data from `src/data/data.yml` (This might get renamed once I get around to translating the CV itself)
+ - Grab the data from `src/data/` [jade filename without extension] `.yml` (e.g. `src/data/index.yml`)
  - Put that data in the Jade template at `src/index.jade`
  - Compile the template and the stylesheets, and put them all into `dist/`
 

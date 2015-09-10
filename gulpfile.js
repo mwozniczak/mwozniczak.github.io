@@ -6,6 +6,7 @@ var concat = require('gulp-concat'),
     gulp = require('gulp'),
     jade = require('gulp-jade'),
     prettify = require('gulp-prettify'),
+    path = require('path'),
     stylus = require('gulp-stylus'),
     typogr = require('gulp-typogr'),
     useref = require('gulp-useref'),
@@ -14,7 +15,6 @@ var concat = require('gulp-concat'),
     // imageDataUri = require('gulp-image-data-uri');
 
 var commons = require('./common_vars');
-console.log(commons);
 var devserverPort = commons.devserverPort;
 
 // Below somewhat adapted from http://stackoverflow.com/a/14732537
@@ -47,7 +47,8 @@ gulp.task("templates", ['styles'], function() {
 
     return gulp.src('src/*.jade')
         .pipe(data(function(f) {
-            var vars_for_jade = yaml.safeLoad(fs.readFileSync('src/data/data.yml', 'utf-8'));
+            var filename = path.basename(f.path, ".jade");
+            var vars_for_jade = yaml.safeLoad(fs.readFileSync('src/data/'+filename+'.yml', 'utf-8'));
 
             vars_for_jade.testimonials = getRows(vars_for_jade.testimonials, 4);
             vars_for_jade.md = require('marked');
