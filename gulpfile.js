@@ -13,8 +13,6 @@ var concat = require('gulp-concat'),
     yaml = require('js-yaml');
     // imageDataUri = require('gulp-image-data-uri');
 
-var phantom = require('gulp-phantom');
-
 var commons = require('./common_vars');
 console.log(commons);
 var devserverPort = commons.devserverPort;
@@ -96,12 +94,6 @@ gulp.task('connect', function() {
     });
 });
 
-gulp.task('renderPDF', ['templates', 'connect'], function() {
-    gulp.src('src/phantom/*.js')
-        .pipe(phantom());
-        //.pipe(gulp.dest('dist/pdf'));
-});
-
 gulp.task("watch", function() {
     gulp.watch("src/*.jade", ['templates']);
     gulp.watch("src/data/*.yml", ['templates']);
@@ -113,5 +105,4 @@ gulp.task("watch", function() {
 gulp.task("default", [
     'templates',
     'connect',
-    //'renderPDF',
     'watch']);
