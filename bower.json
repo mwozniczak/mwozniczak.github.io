@@ -5,7 +5,7 @@
     "Michał Woźniczak"
   ],
   "description": "CV - Michał Woźniczak",
-  "main": "index.htm",
+  "main": "dist/index.html",
   "keywords": [
     "cv"
   ],
@@ -20,10 +20,14 @@
   ],
   "dependencies": {
     "angular": "~1.4.5",
-    "angular-carousel": "~0.3.13",
     "angular-vertilize": "~1.0.1",
     "respond": "~1.4.2",
-    "skeleton": "~2.0.4"
+    "skeleton": "~2.0.4",
+    "skrollr": "~0.6.30"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwozniczak/mwozniczak.github.io.git"
+  }
 }

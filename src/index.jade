@@ -12,37 +12,42 @@ html
 
         // build:js js/all.js 
         script(src="../bower_components/jquery/dist/jquery.min.js")
-        script(src="../bower_components/angular/angular.js")
-        script(src="../bower_components/angular-vertilize/angular-vertilize.js")
+        //- script(src="../bower_components/angular/angular.js")
+        //- script(src="../bower_components/angular-vertilize/angular-vertilize.js")
         script(src="../bower_components/respond/dest/respond.min.js")
+        script(src="../bower_components/skrollr/dist/skrollr.min.js")
         script(src="./js/main.js")
         // endbuild 
     body(ng-app='mwCV' ng-controller='CVController as cvCtrl')
         #topHeader
-            #topContent
-                .row
-                    #name.twelve.columns
-                        h1.
-                            Michał Woźniczak
-                        span.
-                            Developer, Engineer, UI Designer
-                #testimonialBox.row
-                    .twelve.columns
-                        .container
-                            for row in testimonials
-                                .row.testimonialSet(vertilize-container)
-                                    for testimonial in row
-                                        .three.columns
-                                            .testimonialContent(vertilize)
-                                                if testimonial.soundbite
-                                                    |!{md(testimonial.soundbite)}
-                                                else
-                                                    |!{md(testimonial.content)}
-                                            .testimonialCaption
-                                                .row.
-                                                    -- #{testimonial.author}
-                                                .row
-                                                    sup= testimonial.author_title
+            #topLayer1.layer(data-start="background-position: 0px 0px", data-end="background-position: 0px -1000px")
+                #topLayer2.layer(data-start="background-position: 0px 0px", data-end="background-position: 0px -2000px")
+                    #topLayer3.layer(data-start="background-position: 0px 0px", data-end="background-position: 0px -4000px")
+                        #topLayer4.layer(data-start="background-position: 0px 0px", data-end="background-position: 0px -10000px")
+                            #topContent
+                                .row
+                                    #name.twelve.columns
+                                        h1.
+                                            Michał Woźniczak
+                                        span.
+                                            Developer, Engineer, UI Designer
+                                #testimonialBox.row
+                                    .twelve.columns
+                                        .container
+                                            for row in testimonials
+                                                .row.testimonialSet(vertilize-container)
+                                                    for testimonial in row
+                                                        .three.columns
+                                                            .testimonialContent(vertilize)
+                                                                if testimonial.soundbite
+                                                                    |!{md(testimonial.soundbite)}
+                                                                else
+                                                                    |!{md(testimonial.content)}
+                                                            .testimonialCaption
+                                                                .row.
+                                                                    -- #{testimonial.author}
+                                                                .row
+                                                                    sup= testimonial.author_title
         //- .row
         //-     .twelve.columns.wideHeader
         //-         h2 The Pitch
@@ -119,5 +124,6 @@ html
                                     for resp in exp.responsibilities
                                         li= resp
         #footer.row.wideHeader
-            twelve.columns.
-                Content Copyright &copy; 2015 Michał Woźniczak | Source for CV builder tool available on gitHub
+            twelve.columns
+                span Content Copyright &copy; 2015 Michał Woźniczak | Source for CV builder tool 
+                a(href='https://github.com/mwozniczak/mwozniczak.github.io/tree/buildable') available on gitHub

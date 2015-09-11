@@ -20,49 +20,14 @@ h4 {
   background-size: cover;
 }
 #topHeader {
-  background-color: #063a77;
-  background-image: -webkit-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -moz-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -ms-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -o-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: linear-gradient(top, #063a77 25%, #a5c300 100%);
+  background: #099;
   color: #fff;
+  background: url("../imgs/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   -moz-box-shadow: inset 0 0 500px #000;
   -webkit-box-shadow: inset 0 0 500px #000;
-  -webkit-box-shadow: inset 0 0 500px #000;
-  -moz-box-shadow: inset 0 0 500px #000;
-  -ms-box-shadow: inset 0 0 500px #000;
-  -o-box-shadow: inset 0 0 500px #000;
   box-shadow: inset 0 0 500px #000;
-  width: 100%;
-  min-height: 100%;
-}
-.layer {
-  width: 100%;
-  height: 100%;
-  background-position: 0px 0px;
-  min-height: 635px;
-  background-blend-mode: hard-light;
-}
-#topLayer1 {
-  background: url("../imgs/bokeh-lg.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-#topLayer2 {
-  background: url("../imgs/bokeh-l.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-#topLayer3 {
-  background: url("../imgs/bokeh-m.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-#topLayer4 {
-  background: url("../imgs/bokeh-s.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
 }
 #name {
   text-align: center;
@@ -91,6 +56,9 @@ h4 {
   }
 }
 @media only screen and (min-height: 600px) {
+  #topContent {
+    position: absolute;
+  }
   #topHeader {
     min-height: 100%;
   }
@@ -99,8 +67,6 @@ h4 {
   margin-bottom: 2em;
   color: #fff;
   text-align: center;
-  background-color: rgba(0,0,0,0.2);
-  padding: 1em;
 }
 .testimonialContent {
   font-style: italic;
