@@ -44,25 +44,20 @@ h4 {
   min-height: 635px;
   background-blend-mode: hard-light;
 }
-#topLayer1 {
-  background: url("../imgs/bokeh-lg.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+@-webkit-keyframes parallax {
+  from {
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  }
+  to {
+    background-position: 8000px 0px, 16000px 0px, 32000px 0px, 64000px 0px;
+  }
 }
-#topLayer2 {
-  background: url("../imgs/bokeh-l.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-#topLayer3 {
-  background: url("../imgs/bokeh-m.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-#topLayer4 {
-  background: url("../imgs/bokeh-s.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+#layers {
+  background: url("../imgs/bokeh-lg.png") 0px 0px, url("../imgs/bokeh-l.png") 0px 0px, url("../imgs/bokeh-m.png") 0px 0px, url("../imgs/bokeh-s.png") 0px 0px;
+  -webkit-transform: translateZ(0);
+  -webkit-animation: parallax 360s linear infinite;
+  background-blend-mode: multiply;
+  backface-visibility: hidden;
 }
 #name {
   text-align: center;

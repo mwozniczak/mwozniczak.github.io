@@ -49,18 +49,39 @@ inner_shadow(args)
 	min-height 635px
 	background-blend-mode: hard-light
 	
-#topLayer1
-	// cover('../imgs/bokeh-l.png')
-	cover('../imgs/bokeh-lg.png')
+// #topLayer1
+// 	// cover('../imgs/bokeh-l.png')
+// 	cover('../imgs/bokeh-lg.png')
 
-#topLayer2
-	cover('../imgs/bokeh-l.png')
+// #topLayer2
+// 	cover('../imgs/bokeh-l.png')
 
-#topLayer3
-	cover('../imgs/bokeh-m.png')
+// #topLayer3
+// 	cover('../imgs/bokeh-m.png')
 	
-#topLayer4
-	cover('../imgs/bokeh-s.png')
+// #topLayer4
+// 	cover('../imgs/bokeh-s.png')
+	
+@-webkit-keyframes parallax
+	from
+		background-position 0px 0px, 0px 0px, 0px 0px, 0px 0px
+	to
+		background-position 8000px 0px, 16000px 0px, 32000px 0px, 64000px 0px
+		
+
+#layers
+	// vendor('background-size', cover)
+	background url('../imgs/bokeh-lg.png') 0px 0px,\
+	 url('../imgs/bokeh-l.png') 0px 0px,\
+	 url('../imgs/bokeh-m.png') 0px 0px,\
+	 url('../imgs/bokeh-s.png') 0px 0px
+	
+	-webkit-transform: translateZ(0)
+	-webkit-animation: parallax 360s linear infinite;
+	background-blend-mode multiply
+	backface-visibility: hidden
+	 
+
 
 #name
 	text-align center
