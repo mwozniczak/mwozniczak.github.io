@@ -65,7 +65,8 @@ h4 {
   }
 }
 @media only screen and (min-height: 600px) {
-  #topHeader {
+  #topHeader,
+  #topBG {
     min-height: 100%;
   }
 }
