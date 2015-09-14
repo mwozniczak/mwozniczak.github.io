@@ -11,24 +11,23 @@ html
         link(rel='stylesheet' type='text/css' href='./styles/styles.css')
 
         // build:js js/all.js 
-        //- script(src="../bower_components/jquery/dist/jquery.min.js")
-        //- script(src="../bower_components/angular/angular.js")
-        //- script(src="../bower_components/angular-vertilize/angular-vertilize.js")
         script(src="../bower_components/respond/dest/respond.min.js")
         script(src="../bower_components/domready/ready.min.js")
-        //- script(src="../bower_components/skrollr/dist/skrollr.min.js")
+        script(src="../bower_components/chance/dist/chance.min.js")
         script(src="./js/main.js")
         // endbuild 
-    body(ng-app='mwCV' ng-controller='CVController as cvCtrl')
+    body
         #topHeader
             #layers.layer
+                canvas#topBG
                 #topContent
                     .row
                         #name.twelve.columns
-                            h1.
-                                Michał Woźniczak
-                            span.
-                                Developer, Engineer, UI Designer
+                            .container
+                                h1.
+                                    Michał Woźniczak
+                                span.
+                                    Developer, Engineer, UI Designer
                     #testimonialBox.row
                         .twelve.columns
                             .container

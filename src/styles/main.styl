@@ -35,58 +35,23 @@ inner_shadow(args)
 #topHeader
 	// background #009999
 	// background #063A77
-	background-linear-gradient(top, #063A77, 25%, #a5c300, 100%)
+	background none
 	color white
 	// cover('../imgs/bg.JPG')
-	inner_shadow(0 0 500px black)
 	width: 100%
 	min-height 100%
-
-.layer
-	width 100%
-	height 100%
-	background-position: 0px 0px
-	min-height 635px
-	background-blend-mode: hard-light
+	z-index 100
 	
-// #topLayer1
-// 	// cover('../imgs/bokeh-l.png')
-// 	cover('../imgs/bokeh-lg.png')
-
-// #topLayer2
-// 	cover('../imgs/bokeh-l.png')
-
-// #topLayer3
-// 	cover('../imgs/bokeh-m.png')
-	
-// #topLayer4
-// 	cover('../imgs/bokeh-s.png')
-	
-@-webkit-keyframes parallax
-	from
-		background-position 0px 0px, 0px 0px, 0px 0px, 0px 0px
-	to
-		background-position 8000px 0px, 16000px 0px, 32000px 0px, 64000px 0px
-		
-
-#layers
-	// vendor('background-size', cover)
-	background url('../imgs/bokeh-lg.png') 0px 0px,\
-	 url('../imgs/bokeh-l.png') 0px 0px,\
-	 url('../imgs/bokeh-m.png') 0px 0px,\
-	 url('../imgs/bokeh-s.png') 0px 0px
-	
-	-webkit-transform: translateZ(0)
-	-webkit-animation: parallax 360s linear infinite;
-	background-blend-mode multiply
-	backface-visibility: hidden
-	 
-
+#topBG
+	position: absolute
+	z-index 0
+	inner_shadow(0 0 500px black)
 
 #name
 	text-align center
 	padding-top 5em
 	padding-bottom 5em
+	z-index 100
 
 .workExp
 	padding 1em

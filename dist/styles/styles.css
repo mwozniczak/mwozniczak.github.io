@@ -20,13 +20,15 @@ h4 {
   background-size: cover;
 }
 #topHeader {
-  background-color: #063a77;
-  background-image: -webkit-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -moz-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -ms-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: -o-linear-gradient(top, #063a77 25%, #a5c300 100%);
-  background-image: linear-gradient(top, #063a77 25%, #a5c300 100%);
+  background: none;
   color: #fff;
+  width: 100%;
+  min-height: 100%;
+  z-index: 100;
+}
+#topBG {
+  position: absolute;
+  z-index: 0;
   -moz-box-shadow: inset 0 0 500px #000;
   -webkit-box-shadow: inset 0 0 500px #000;
   -webkit-box-shadow: inset 0 0 500px #000;
@@ -34,35 +36,12 @@ h4 {
   -ms-box-shadow: inset 0 0 500px #000;
   -o-box-shadow: inset 0 0 500px #000;
   box-shadow: inset 0 0 500px #000;
-  width: 100%;
-  min-height: 100%;
-}
-.layer {
-  width: 100%;
-  height: 100%;
-  background-position: 0px 0px;
-  min-height: 635px;
-  background-blend-mode: hard-light;
-}
-@-webkit-keyframes parallax {
-  from {
-    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  }
-  to {
-    background-position: 8000px 0px, 16000px 0px, 32000px 0px, 64000px 0px;
-  }
-}
-#layers {
-  background: url("../imgs/bokeh-lg.png") 0px 0px, url("../imgs/bokeh-l.png") 0px 0px, url("../imgs/bokeh-m.png") 0px 0px, url("../imgs/bokeh-s.png") 0px 0px;
-  -webkit-transform: translateZ(0);
-  -webkit-animation: parallax 360s linear infinite;
-  background-blend-mode: multiply;
-  backface-visibility: hidden;
 }
 #name {
   text-align: center;
   padding-top: 5em;
   padding-bottom: 5em;
+  z-index: 100;
 }
 .workExp {
   padding: 1em;

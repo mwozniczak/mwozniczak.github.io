@@ -19,12 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.5",
-    "angular-vertilize": "~1.0.1",
+    "chance": "~0.8.0",
     "domready": "0.3.0",
     "respond": "~1.4.2",
-    "skeleton": "~2.0.4",
-    "skrollr": "~0.6.30"
+    "skeleton": "~2.0.4"
   },
   "devDependencies": {},
   "repository": {
