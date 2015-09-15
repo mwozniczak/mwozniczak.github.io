@@ -47,7 +47,7 @@ countries:[{name:"Afghanistan",abbreviation:"AF"},{name:"Albania",abbreviation:"
 })();
 window.onload = function() {
 	var canvas = document.getElementById('topBG');
-	var backgroundedDiv = document.getElementById('topContent')
+	var backgroundedDiv = document.getElementById('topHeader');
 
 	function resize() {
 		canvas.width = backgroundedDiv.scrollWidth;
