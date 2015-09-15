@@ -21,6 +21,7 @@
   "dependencies": {
     "chance": "~0.8.0",
     "domready": "0.3.0",
+    "ExplorerCanvas": "excanvas#*",
     "respond": "~1.4.2",
     "skeleton": "~2.0.4"
   },

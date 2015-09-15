@@ -10,10 +10,15 @@ html
         link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Exo+2:300,400,600,900|Merriweather:300italic&subset=latin,latin-ext')
         link(rel='stylesheet' type='text/css' href='./styles/styles.css')
 
+        // build:js js/omg_ie.js
+        script(src="../bower_components/ExplorerCanvas/excanvas.js")
+        // endbuild
+
         // build:js js/all.js 
         script(src="../bower_components/respond/dest/respond.min.js")
         script(src="../bower_components/domready/ready.min.js")
         script(src="../bower_components/chance/dist/chance.min.js")
+        script(src="./js/shims.js")
         script(src="./js/main.js")
         // endbuild 
     body

@@ -1,4 +1,4 @@
-domready(function() {
+window.onload = function() {
 	var canvas = document.getElementById('topBG');
 	var backgroundedDiv = document.getElementById('topContent')
 
@@ -126,4 +126,4 @@ domready(function() {
 		draw_UpdateImgs();
 	}
 	window.requestAnimationFrame(draw);
-});
+};

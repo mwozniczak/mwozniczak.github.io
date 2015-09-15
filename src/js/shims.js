@@ -25,3 +25,10 @@
             clearTimeout(id);
         };
 }());
+(function() {
+    if (!window.addEventListener) {
+        window.addEventListener = function(type, listener, useCapture) {
+            window.attachEvent(type, listener);
+        };
+    }
+})();
