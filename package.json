@@ -15,7 +15,6 @@
     "gulp-data": "^1.2.0",
     "gulp-debug": "^2.0.0",
     "gulp-jade": "^0.11.0",
-    "gulp-phantom": "0.0.6",
     "gulp-prettify": "^0.3.0",
     "gulp-styl": "^1.0.3",
     "gulp-stylus": "^2.0.6",
