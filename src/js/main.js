@@ -117,13 +117,20 @@ window.onload = function() {
 	positionImgs();
 
 	function draw() {
-		window.requestAnimationFrame(draw);
 		context.globalCompositeOperation = "source-over";
 		context.fillStyle = baseBG;
 		context.fillRect(0, 0, canvas.width, canvas.height);
 
 		context.globalCompositeOperation = "hard-light";
 		draw_UpdateImgs();
+		if (window.requestAnimationFrame) {
+			window.requestAnimationFrame(draw);
+		}
 	}
-	window.requestAnimationFrame(draw);
+	if (window.requestAnimationFrame) {
+		window.requestAnimationFrame(draw);
+	}
+	else {
+		draw();
+	}
 };
