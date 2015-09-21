@@ -46,7 +46,7 @@ window.onload = function() {
 			img.src = "assets/" + size + "-" + j + ".png";
 			img.onload = function() {
 				images.loaded++;
-			}
+			};
 			images.items[size].push(img);
 		}
 	}
@@ -71,7 +71,7 @@ window.onload = function() {
 		var chanceY = {
 			min: -parseInt(instance.img.height * 0.75),
 			max: canvas.height + parseInt(instance.img.height * 0.75)
-		}
+		};
 		instance.placementX = chance.integer(chanceX);
 		instance.placementY = chance.integer(chanceY);
 
@@ -101,7 +101,7 @@ window.onload = function() {
 			for (var i in placements[size]) {
 				var imgObj = placements[size][i];
 				context.drawImage(imgObj.img, imgObj.placementX, imgObj.placementY);
-				imgObj.placementX = imgObj.placementX - imgObj.speed;
+				imgObj.placementX = (imgObj.placementX - imgObj.speed);
 				if (shouldFadeout(imgObj)) {
 					placements[size][i] = makeImg(size, true);
 				}
