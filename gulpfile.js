@@ -71,7 +71,7 @@ gulp.task("templates", ['styles'], function() {
         }))
         .pipe(jade())
         .pipe(typogr())
-        .pipe(prettify({indent_size: 2})) // Necessary. Otherwise useref flips its shit.
+        .pipe(prettify({indent_size: 2})) // Necessary. Otherwise useref flips out.
         .pipe(assets)
         .pipe(assets.restore())
         .pipe(useref())
