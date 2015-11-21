@@ -123,6 +123,7 @@ history:
 
     - employer: 'UseLab / Technology Partners'
       title: Developer
+      css_class: noPagebreak_lame
       responsibilities:
         - 'Implementation of CMS and visual layout for technologypartners.pl site.'
         - 'Template preparation and adjustments.'

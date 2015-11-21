@@ -37,10 +37,10 @@ html
                         .twelve.columns
                             .container
                                 for row in testimonials
-                                    .row.testimonialSet(vertilize-container)
+                                    .row.testimonialSet
                                         for testimonial in row
                                             .three.columns
-                                                .testimonialContent(vertilize)
+                                                .testimonialContent
                                                     if testimonial.soundbite
                                                         |!{md(testimonial.soundbite)}
                                                     else
@@ -94,7 +94,7 @@ html
                             +skill_list(skills.data)
                         .twelve.columns
                             +skill_list(skills.visual)
-                .five.columns
+                .five.columns.noPagebreak_lame
                     h3 Spoken languages
                     ul
                         for language in skills.languages
@@ -102,29 +102,31 @@ html
                                 strong=language.name + " "
                                 span=language.level
 
-                    h3 Education
-                    .row
-                            strong School: 
-                            span= education.school
-                    .row
-                            strong Major: 
-                            span= education.major
+                    #education
+                        h3 Education
+                        .row
+                                strong School: 
+                                span= education.school
+                        .row
+                                strong Major: 
+                                span= education.major
 
         .row
             .twelve.columns.wideHeader
                 h2 Work Experience
             .container
                 for year in history_years
-                    h4= year
-                    for exp in history[year]
-                        .row.workExp
-                            .five.columns.employer
-                                strong= exp.employer
-                                div= exp.title
-                            .seven.columns.responsibilities
-                                ul
-                                    for resp in exp.responsibilities
-                                        li= resp
+                    .yearExp
+                        h4= year
+                        for exp in history[year]
+                            .row.workExp(class="#{exp.css_class}")
+                                .five.columns.employer
+                                    strong= exp.employer
+                                    div= exp.title
+                                .seven.columns.responsibilities
+                                    ul
+                                        for resp in exp.responsibilities
+                                            li= resp
         #footer.row.wideHeader
             twelve.columns
                 span Content Copyright &copy; 2015 Michał Woźniczak | Source for CV builder tool 

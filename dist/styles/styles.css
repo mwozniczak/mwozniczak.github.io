@@ -21,10 +21,14 @@ h4 {
 }
 #topHeader {
   background: none;
-  color: #fff;
   width: 100%;
-  min-height: 100%;
   z-index: 100;
+}
+@media only screen {
+  #topHeader {
+    min-height: 100%;
+    color: #fff;
+  }
 }
 #topBG {
   position: absolute;
@@ -37,22 +41,36 @@ h4 {
   -o-box-shadow: inset 0 0 500px #000;
   box-shadow: inset 0 0 500px #000;
 }
+@media only print {
+  canvas {
+    display: none;
+  }
+}
 #name {
   text-align: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
   z-index: 100;
 }
-.workExp {
-  padding: 1em;
-  margin-bottom: 1em;
+@media only screen {
+  #name {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .workExp {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .workExp .employer {
+    margin-bottom: 1em;
+    margin-left: -1em;
+  }
+}
+@media only print {
+  .responsibilities li {
+    page-break-inside: avoid;
+  }
 }
 .workExp:hover {
   background: #efe;
-}
-.workExp .employer {
-  margin-bottom: 1em;
-  margin-left: -1em;
 }
 @media only screen and (min-width: 550px) {
   #topContent {
@@ -70,11 +88,20 @@ h4 {
   }
 }
 .testimonialSet {
-  margin-bottom: 2em;
-  color: #fff;
   text-align: center;
   background-color: rgba(0,0,0,0.2);
   padding: 1em;
+}
+@media only screen {
+  .testimonialSet {
+    margin-bottom: 2em;
+    color: #fff;
+  }
+}
+@media only print {
+  .testimonialSet .columns {
+    page-break-inside: avoid;
+  }
 }
 .testimonialContent {
   font-style: italic;
@@ -84,12 +111,33 @@ h4 {
 .testimonialCaption {
   text-align: right;
 }
+@media only print {
+  .testimonialContent {
+    float: left;
+    width: 60%;
+  }
+  .testimonialCaption {
+    float: right;
+    width: 40%;
+  }
+  #education {
+    page-break-inside: avoid;
+  }
+}
 .wideHeader {
   background: #c41100;
   color: #fff;
   text-align: center;
   margin-bottom: 1em;
   padding-top: 1em;
+}
+@media only print {
+  .wideHeader {
+    float: none;
+  }
+}
+.wideHeader h2 {
+  page-break-before: always;
 }
 #footer {
   margin-top: 1em;
@@ -111,4 +159,7 @@ li.knownTech {
 }
 .knownTech.basics {
   color: #777;
+}
+.noPagebreak_lame {
+  page-break-inside: avoid;
 }
