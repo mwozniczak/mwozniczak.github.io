@@ -39,6 +39,7 @@ skills:
       - {name: jQuery, level: expert}
       - {name: Angular, level: intermediate}
       - {name: node.js, level: intermediate}
+      - {name: ReactJS, level: intermediate}
       - {name: Symfony, level: intermediate}
 
   templating:
@@ -82,18 +83,19 @@ history:
     - employer: Atos IT Services Sp z o.o.
       title: Software Engineer
       responsibilities:
-        - 'Co-developed web frontend for Dyamon, flagship Atos monitoring tool and a part of ATF (Atos Technology Framework). Reworked and refactored the vast majority of code to improve code readability, as well as to enhance the functionality and configurability. The end result is now supported by a robust, extendable authentication framework and routing system, configurability via YAML, and clearly defined OOP class system.'
-        - 'Developed a bridge between Dyamon->MDR (Master Data Record), as well as a configurable system for exporting to other CMDB systems such as Atrium or HPAM. The export system itself is extensible with custom processing functions, of which many exist to support the creation of CIs, relations, and Product Software categories, among others.'
-        - 'Re-worked the user interface for internal Canopy Pricing Tool, in accordance to standards and best industry practices for usability and user experience design.'
+        - 'Authored and implemented several tools related to networks and network migrations. Said tools reduced the necessary effort by orders of magnitude, in some extreme cases - from weeks to minutes.'
+        - 'Co-developed frontend and middleware layer for Dyamon, flagship Atos monitoring tool and a part of ATF (Atos Technology Framework). Reworked and refactored the vast majority of code to improve code readability, as well as to enhance the functionality and configurability. The end result is now supported by a robust, extendable authentication framework and routing system, boasting configurability, and clean set of APIs.'
+        - 'Developed a middleware layer between Dyamon and several CMDB systems, including Atrium and HPAM. This layer is extensible, and allows numerous configurability options for tailoring the processing of CIs, relationships, and objects derived from either of those.'
+        - 'Design and re-design of several internal tools improving the usability and user experience, in accordance to standards and best industry practices.'
   # 2011-2015:
   #   - employer: Atos IT Services Sp z o.o.
   #     title: Application Engineer
   #     responsibilities:
         - 'Co-lead presentations of ATS Tower during Atos Open Days. Said presentation was met with standing ovation, setting the bar for all others to follow.'
-        - 'Two-time recipient of the Accolade Award'
-        - 'Designed and developed Tapedeck Remote Automation and Deployment Tool, and lead the enhancement projects related to it. Said tool is capable of rapid, configurable automation (e.g. mass instalations, remediation, compliance checks, etc.) across multiple target machines, both Windows (WMI required), and Linux/Unix (via SSH)'
+        - 'Four-time recipient of the Accolade Award'
+        - 'Designed and developed Tapedeck Remote Automation and Deployment Tool, and lead the enhancement projects related to it. Said tool is capable of rapid, configurable automation (e.g. mass instalations, remediation, compliance checks, etc.) across multiple target machines, both Windows (via WMI), and Linux/Unix (via SSH)'
         - 'Developed a robust, customized toolset for Cisco network hardware (routers, switches, etc.) auditing and compliance checking, visualization, and remediation.'
-        - 'Developed Dyamon Reporting, a visual dashboard of diagrams showing the customers overall health of standard operations, such as backups or scheduled jobs. The end-users are empowered to easily track down which machines are underperforming, and why. During its operation, Dyamon Reporting was also able to generate PDF files which could be sent to contact people responsible for machines identified as adversely affected by performance issues.'
+        - 'Designed, architected and implemented an extensible, visual dashboard for reviewing the overall health of standard operations, such as backups or scheduled jobs. The end-users are empowered to easily track down which machines are underperforming, and why. During its operation, this tool was also able to generate PDF files which could be sent to contact people responsible for machines identified as adversely affected by performance issues.'
   # 2011:
   #   - employer: Atos Origin Sp z o.o.
   #     title: Application Engineer
