@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Michał Woźniczak - CV
+    link(link href="https://fonts.googleapis.com/css?family=Oleo+Script|Slabo+13px|Zilla+Slab+Highlight:400,700&amp;subset=latin-ext", rel="stylesheet")
+    link(link href="./style.css", rel="stylesheet")
+    block in_head
+    //if IE
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
+  body
+    .container
+      block content
+    block scripts
