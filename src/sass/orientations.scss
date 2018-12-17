@@ -5,6 +5,14 @@
     .history-container {
         display: flex
     }
+
+    #skills {
+        display: flex
+    }
+    #skills div {
+        width: 50%
+    }
+
     #atos .history-item, #contract .history-item {
         width: 33.3%;
     }
