@@ -25,7 +25,6 @@ html, body {
 section {
     width: 100%;
     min-height: 100%;
-    display:flex;
     justify-content:center;
     align-items:center;
     box-shadow: 
@@ -43,6 +42,13 @@ section {
     border-width: 0.3vw;
     padding-top: 0.7vw;
     width: 58vw;
+}
+
+#skills {
+    display: flex
+}
+#skills div {
+    width: 50%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +80,6 @@ strong {
 
 #skills div {
     text-align: left;
-    width: 50%;
     padding: 1vw
 }
 
@@ -83,10 +88,6 @@ strong {
     font-size: 5vh;
     margin: -3vh 0 0;
     text-align: center;
-}
-
-#skills {
-    display: flex;
 }
 
 #hardskills {
@@ -108,10 +109,6 @@ strong {
 }
 .employment h3 {
     margin: 0;
-}
-
-.history-container {
-    display: flex
 }
 
 .history-item {
@@ -141,14 +138,6 @@ strong {
     color: white;
 }
 
-#atos .history-item, #contract .history-item {
-    width: 33.3%;
-}
-
-#research .history-item, #freelance .history-item, #contract .history-container:last-child .history-item {
-    width: 50%;
-}
-
 #contract .history-container:last-child, #freelance .history-container:last-child {
     border-top: 0.6vw dotted;
     margin-top: 2vw;
@@ -173,3 +162,5 @@ footer {
     color: white;
     text-align: center;
 }
+
+@import 'orientations'

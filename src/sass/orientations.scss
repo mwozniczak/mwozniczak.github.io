@@ -1,0 +1,15 @@
+@media (orientation: landscape), (min-width: 1000px) {
+    section {
+        display: flex
+    }
+    .history-container {
+        display: flex
+    }
+    #atos .history-item, #contract .history-item {
+        width: 33.3%;
+    }
+    
+    #research .history-item, #freelance .history-item, #contract .history-container:last-child .history-item {
+        width: 50%;
+    }
+}
