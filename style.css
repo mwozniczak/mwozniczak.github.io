@@ -1,0 +1,162 @@
+html, body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Slabo 13px", serif;
+  text-shadow: 0px 4px 10px #0a0a0a;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 1vw 2vw -0.5vw rgba(10, 10, 10, 0.8);
+}
+
+#heading {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+#vitals {
+  border-top: solid #ffffff;
+  border-width: 0.3vw;
+  padding-top: 0.7vw;
+  width: 58vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Slabo 13px", serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+#heading h1 {
+  font-size: 6vw;
+  margin: 0;
+}
+
+#heading h2 {
+  font-family: "Oleo Script", cursive;
+  border-bottom: 0.3vw dotted #ffffff;
+  padding-bottom: 0.7vw;
+  font-size: 2.75vw;
+  margin-top: -1.7vw;
+}
+
+strong {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+#skills div {
+  text-align: left;
+  width: 50%;
+  padding: 1vw;
+}
+
+#skills h3 {
+  text-decoration: none;
+  font-size: 5vh;
+  margin: -3vh 0 0;
+  text-align: center;
+}
+
+#skills {
+  display: flex;
+}
+
+#hardskills {
+  border-right: 1px solid white;
+}
+
+.employment h1 {
+  text-align: center;
+  font-size: 4vw;
+  padding: 0.5vw;
+  padding-bottom: 0;
+  border-bottom: 1px solid;
+  margin: 0 10vw;
+}
+
+.employment h2 {
+  margin-bottom: 0;
+}
+
+.employment h3 {
+  margin: 0;
+}
+
+.history-container {
+  display: flex;
+}
+
+.history-item {
+  padding: 0 4vw;
+  border-right: 0.2vw dotted;
+  margin-top: 2vw;
+}
+
+#atos {
+  background: #0066a1;
+  color: white;
+  border-top: 1px solid #212121;
+}
+
+#contract {
+  background: #57B8FF;
+  color: white;
+}
+
+#freelance {
+  background: #FBB13C;
+  color: white;
+}
+
+#research {
+  background: #FE6847;
+  color: white;
+}
+
+#atos .history-item, #contract .history-item {
+  width: 33.3%;
+}
+
+#research .history-item, #freelance .history-item, #contract .history-container:last-child .history-item {
+  width: 50%;
+}
+
+#contract .history-container:last-child, #freelance .history-container:last-child {
+  border-top: 0.6vw dotted;
+  margin-top: 2vw;
+}
+
+.history-item:last-child {
+  border-right: none !important;
+}
+
+.history-item li {
+  margin: 1vw auto;
+}
+
+.employment-container {
+  width: 100%;
+}
+
+footer {
+  background: #B66D0D;
+  border-top: 1px solid #FBB13C;
+  padding: 1vw;
+  color: white;
+  text-align: center;
+}
