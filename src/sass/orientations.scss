@@ -1,10 +1,14 @@
 @media (orientation: landscape), (min-width: 1000px) {
+    #vitals {
+        width: 58vw;
+    }
     section {
-        display: flex
+        display: flex;
+        min-height: 100%;
     }
     .history-container {
         display: flex
-    }
+    } 
 
     #skills {
         display: flex
@@ -13,11 +17,25 @@
         width: 50%
     }
 
+    #skills h3 {
+        font-size: 2vw;
+        margin: -3vh 0 0;
+    }
+
     #atos .history-item, #contract .history-item {
         width: 33.3%;
     }
     
     #research .history-item, #freelance .history-item, #contract .history-container:last-child .history-item {
         width: 50%;
+    }
+
+    .employment h1 {
+        font-size: 4vw;
+    }
+}
+@media (orientation: portrait), (min-width: 999px) {
+    section {
+        padding: 4vh 0;
     }
 }
