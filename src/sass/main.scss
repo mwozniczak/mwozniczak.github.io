@@ -11,11 +11,22 @@ $bg-freelance: #FBB13C;
 $bg-research: #FE6847;
 $bg-footer: #B66D0D;
 
+@media screen {
+    html, body {
+        text-shadow: 0px 4px 10px rgba(10, 10, 10, 1);
+        color: white;
+    }
+
+    section {
+        box-shadow: 
+            inset 0px 1vw 2vw -0.5vw rgba(10, 10, 10, 0.8)
+    }
+}
+
 html, body {
     margin: 0 auto;
     height: 100%;
     font-family: $header-font;
-    text-shadow: 0px 4px 10px rgba(10, 10, 10, 1);
 }
 .container {
     width: 100%;
@@ -30,13 +41,10 @@ section {
     width: 100%;
     justify-content:center;
     align-items:center;
-    box-shadow: 
-        inset 0px 1vw 2vw -0.5vw rgba(10, 10, 10, 0.8)
 }
 
 #heading {
     background: $main-title-bg;
-    color: $main-title-text;
     text-align: center;
 }
 
@@ -112,23 +120,19 @@ strong {
 
 #atos {
     background: $atos-blues;
-    color: white;
     border-top: 1px solid #212121;
 }
 
 #contract {
     background: $bg-contract;
-    color: white;
 }
 
 #freelance {
     background: $bg-freelance;
-    color: white;
 }
 
 #research {
     background: $bg-research;
-    color: white;
 }
 
 #contract .history-container:last-child, #freelance .history-container:last-child {
@@ -152,7 +156,6 @@ footer {
     background: $bg-footer;
     border-top: 1px solid $bg-freelance;
     padding: 1vw;
-    color: white;
     text-align: center;
 }
 
